@@ -10,7 +10,7 @@ cross=true;
 audioGameOver= new Audio("gameOver.wav");
 audioJump= new Audio("jump.wav");
 audioBackground=new Audio("background.opdownload");
-// audioBackground.play();
+audioBackground.play();
 setTimeout(() => {
     audioBackground.play();
 },1000);
