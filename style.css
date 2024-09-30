@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100%;
+}
+p{
+    position: absolute;
+    left: 44vw;  
+    top: 2rem;
+    font-size: 1rem ;
+    color: rgb(232, 169, 9);
+    font-weight: 900;
+    text-decoration: wavy red;
+    font-family: cursive;
+}
+.dino{
+    background-image: url(./images/dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    bottom: 3px;
+    left: 3vw;
+}
+#scoreCont{
+    position: absolute;
+    inset:0;
+    margin-left: 43%;  
+    margin-top: 20%;
+    color: rgb(82, 12, 12);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.gameOver{
+    text-align: center;
+    padding-top: 9rem;
+    visibility: hidden;
+    color: rgb(255, 221, 0);
+   text-shadow: 9px 10px 4px rgb(227, 6, 6);
+    font-size: 5rem;
+}
+.over{
+    animation: over 3s linear;
+}
+@keyframes over{
+    0%{
+        font-size: 0;
+    }50%{
+        font-size: 5rem;
+    }75%{
+        font-size: unset;
+    }
+}
+
+.obstacle{
+    background-image: url(./images/obstacle.png);
+    background-size: cover;
+    width:90px ;
+    height: 100px;
+    position: absolute;
+    bottom: 3px;
+    left: 44vw;  
+}
+.animateDino{
+    animation-name: dino;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+}
+.obstacleAni{
+    animation-name: obstacleAni;   
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes dino{
+    0%{
+        bottom: 3px;
+    }50%{
+        bottom: 335px;
+    }100%{
+        bottom: 3px;
+    }
+}
+@keyframes obstacleAni{
+    0%{
+        left:100vw;
+    }100%{
+        left: -44vw;
+    }
+}
