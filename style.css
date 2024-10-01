@@ -53,9 +53,7 @@ p{
    text-shadow: 9px 10px 4px rgb(227, 6, 6);
     font-size: 2rem;
 }
-.jump{
-    visibility: hidden;
-}
+
 .over{
     animation: over 3s linear;
 }
@@ -134,16 +132,5 @@ p{
     }
     p{
         font-size: 1rem ;
-    }
-    .jump{
-        display: inline-block;
-        color: green;
-        font-size: 1rem;
-        font-weight: 800;
-        background-color: violet;
-        border-radius:30%;
-        padding: 0.3rem;
-        /* transform: translate(50px,60px); */
-        visibility: visible;
     }
 }

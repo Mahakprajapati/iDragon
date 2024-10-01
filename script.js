@@ -2,11 +2,11 @@ dino=document.querySelector('.dino');
 gameOver=document.querySelector('.gameOver');
 obstacle=document.querySelector('.obstacle');
 scoreCont=document.querySelector('#scoreCont');
-jump=document.querySelector('.jump');
+gameContainer=document.querySelector('.gameContainer');
 
 
 
-jump.addEventListener('touchstart',(e)=>{
+gameContainer.addEventListener('touchstart',(e)=>{
     // console.log(e);
     dino.classList.add('animateDino');
     setTimeout(()=>{
@@ -20,7 +20,8 @@ cross=true;
 
 audioGameOver= new Audio("gameOver.wav");
 audioJump= new Audio("jump.wav");
-audioBackground=new Audio("background.opdownload");
+audioBackground=new Audio("background.mp3");
+
 
 setTimeout(() => {
     audioBackground.play();
