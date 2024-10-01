@@ -16,7 +16,7 @@ body{
 }
 p{
     position: absolute;
-    left: 44vw;  
+    left: 20%;  
     top: 2rem;
     font-size:2rem ;
     color: rgb(9, 232, 72);
@@ -51,7 +51,10 @@ p{
     visibility: hidden;
     color: rgb(255, 221, 0);
    text-shadow: 9px 10px 4px rgb(227, 6, 6);
-    font-size: 5rem;
+    font-size: 3rem;
+}
+.jump{
+    visibility: hidden;
 }
 .over{
     animation: over 3s linear;
@@ -73,7 +76,7 @@ p{
     height: 100px;
     position: absolute;
     bottom: 3px;
-    left: 44vw;  
+    left: 80vw;  
 }
 .animateDino{
     animation-name: dino;
@@ -130,5 +133,16 @@ p{
     }
     p{
         font-size: 1rem ;
+    }
+    .jump{
+        display: inline;
+        color: green;
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: violet;
+        border-radius:30%;
+        padding: 0.3rem;
+        position: absolute;
+        visibility: visible;
     }
 }

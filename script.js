@@ -2,19 +2,16 @@ dino=document.querySelector('.dino');
 gameOver=document.querySelector('.gameOver');
 obstacle=document.querySelector('.obstacle');
 scoreCont=document.querySelector('#scoreCont');
-gameContainer=document.querySelector('.gameContainer');
+jump=document.querySelector('.jump');
 
-gameContainer.addEventListener('click',()=>{
+
+
+jump.addEventListener('click',()=>{
     dino.classList.add('animateDino');
     setTimeout(()=>{
         dino.classList.remove('animateDino');
     },700);
 })
-gameContainer.addEventListener('dblclick',()=>{
-    dinoX=parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-    dino.style.left=dinoX+112+"px";
-})
-
 
 score=0;
 cross=true;
