@@ -80,7 +80,7 @@ p{
 }
 .animateDino{
     animation-name: dino;
-    animation-duration: 1s;
+    animation-duration: 0.9s;
     animation-timing-function: linear;
 }
 .obstacleAni{
@@ -142,9 +142,6 @@ p{
         background-color: violet;
         border-radius:30%;
         padding: 0.3rem;
-        position: absolute;
         visibility: visible;
-        top: 50%;
-        left: 70%;
     }
 }
