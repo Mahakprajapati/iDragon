@@ -80,7 +80,7 @@ p{
 }
 .animateDino{
     animation-name: dino;
-    animation-duration: 0.9s;
+    animation-duration: 1s;
     animation-timing-function: linear;
 }
 .obstacleAni{
@@ -144,5 +144,7 @@ p{
         padding: 0.3rem;
         position: absolute;
         visibility: visible;
+        top: 50%;
+        left: 70%;
     }
 }
