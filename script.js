@@ -24,7 +24,7 @@ audioBackground=new Audio("background.opdownload");
 
 setTimeout(() => {
     audioBackground.play();
-},1000);
+},100);
 
 document.onkeydown=function(e){
     // console.log("key code : ", e.keyCode);

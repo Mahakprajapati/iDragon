@@ -51,7 +51,7 @@ p{
     visibility: hidden;
     color: rgb(255, 221, 0);
    text-shadow: 9px 10px 4px rgb(227, 6, 6);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .jump{
     visibility: hidden;
@@ -63,7 +63,7 @@ p{
     0%{
         font-size: 0;
     }50%{
-        font-size: 5rem;
+        font-size: 3rem;
     }75%{
         font-size: unset;
     }
@@ -123,6 +123,7 @@ p{
         width: 100px;
         height: 150px;
         bottom: 0px;
+        left: 3rem;
     }
     #scoreCont{
         margin-left: 0;
@@ -135,13 +136,14 @@ p{
         font-size: 1rem ;
     }
     .jump{
-        display: inline;
+        display: inline-block;
         color: green;
         font-size: 1rem;
         font-weight: 800;
         background-color: violet;
         border-radius:30%;
         padding: 0.3rem;
+        /* transform: translate(50px,60px); */
         visibility: visible;
     }
 }
