@@ -2,6 +2,18 @@ dino=document.querySelector('.dino');
 gameOver=document.querySelector('.gameOver');
 obstacle=document.querySelector('.obstacle');
 scoreCont=document.querySelector('#scoreCont');
+gameContainer=document.querySelector('.gameContainer');
+
+gameContainer.addEventListener('click',()=>{
+    dino.classList.add('animateDino');
+    setTimeout(()=>{
+        dino.classList.remove('animateDino');
+    },700);
+})
+gameContainer.addEventListener('dblclick',()=>{
+    dinoX=parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
+    dino.style.left=dinoX+112+"px";
+})
 
 
 score=0;
@@ -10,13 +22,13 @@ cross=true;
 audioGameOver= new Audio("gameOver.wav");
 audioJump= new Audio("jump.wav");
 audioBackground=new Audio("background.opdownload");
-audioBackground.play();
+
 setTimeout(() => {
     audioBackground.play();
 },1000);
 
 document.onkeydown=function(e){
-    console.log("key code : ", e.keyCode);
+    // console.log("key code : ", e.keyCode);
     if(e.keyCode==38){
         dino.classList.add('animateDino');
         setTimeout(()=>{

@@ -12,15 +12,16 @@ body{
     background-size: 100vw 100vh;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 p{
     position: absolute;
     left: 44vw;  
     top: 2rem;
-    font-size: 1rem ;
-    color: rgb(232, 169, 9);
-    font-weight: 900;
-    text-decoration: wavy red;
+    font-size:2rem ;
+    color: rgb(9, 232, 72);
+    font-weight:bolder;
+    text-decoration: wavy;
     font-family: cursive;
 }
 .dino{
@@ -126,6 +127,8 @@ p{
         font-size: 1.5rem;
         color: cadetblue;
         padding-left: 1rem;
-
+    }
+    p{
+        font-size: 1rem ;
     }
 }
