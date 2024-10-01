@@ -6,12 +6,15 @@ jump=document.querySelector('.jump');
 
 
 
-jump.addEventListener('click',()=>{
+jump.addEventListener('touchstart',(e)=>{
+    // console.log(e);
     dino.classList.add('animateDino');
     setTimeout(()=>{
         dino.classList.remove('animateDino');
     },700);
-})
+},true);
+
+jump.addEventListener('touchend')
 
 score=0;
 cross=true;
