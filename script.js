@@ -14,7 +14,6 @@ jump.addEventListener('touchstart',(e)=>{
     },700);
 },true);
 
-jump.addEventListener('touchend')
 
 score=0;
 cross=true;
